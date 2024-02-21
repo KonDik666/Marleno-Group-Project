@@ -1240,3 +1240,455 @@ footer{
     text-align: center;
     margin-top: 1%;
 }
+
+/* footer end */
+
+/* catalog start */
+
+.main-catalog{
+    padding-top:5%;
+}
+
+.main-catalog h3{
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 41px;
+    margin-left:400px;
+    margin-bottom:5%;
+}
+
+.main-catalog h4{
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 27px;
+    text-transform: uppercase;
+    color:#FCDB5C;
+    margin-top:30%;
+    margin-bottom: 10%;
+}
+
+.filters-bg{
+    background: #2C2C32;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+  
+
+}
+.catalog-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filters-items{
+    display: flex;
+    flex-direction: column;
+}
+.filters-item{
+    display: flex;
+    flex-direction: row;
+ 
+}
+.filters-item label{
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 27px;
+    color: white;
+    margin-left:5%;
+}
+
+.customs-catalog{
+    margin-right: 10%;
+    width: 70%;
+}
+.sorting{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #2C2C32;
+}
+.sorting p{
+    margin-right:1%;
+    font-family: Raleway;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.catalog{
+    margin-top:5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.custom-card{
+    width:387px;
+    height: 395px;
+    box-shadow: 3px 3px 10px 3px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:10%;
+}
+.triangle{
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid white;
+    position: absolute;
+    margin-bottom: 17.7em;
+    margin-right: 17.6em;
+}
+.triangle2{
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid white;
+    position: absolute;
+    margin-top: 2.9em;
+    margin-left: 17.57em;
+}
+.custom-card p{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.custom-card button{
+    width: 302px;
+    height:70px;
+    transform: skew(-20deg);
+    border:none;
+    background: #2C2C32;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #FCDB5C;
+    font-family: Raleway;
+    position: absolute;
+    margin-top: 22em;
+}
+/* catalog end */
+
+/* start guarantee */
+.guarantee{
+ background: url(../img/background-white.jpg);
+ height: 698px;
+ padding: 3% 15% 0% 15%;
+}
+.guarantee h2{
+    font-size: 41px;
+    font-weight: bold;
+    color: #383736;
+
+   }
+.guarantee P{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #787878;
+   }
+   .guarantee_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 322px;
+    background: #F7F6F2;
+    border: #DFDDD4 solid 0.5px;
+    border-radius: 30px;
+   }
+   .guarantee_block p{
+    text-transform: none;
+    font-weight: 600;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+   }
+   .guarantee_img_block{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 12%;
+    margin-bottom: 9%;
+   }
+   .guarantee_img_block_black{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #383736;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-bottom: 7%;
+   }
+   .guarantee_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+   }
+/* end guarantee */
+
+
+/*start completed*/
+
+
+.completed-gallery {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+     
+}
+.completed-content{
+    height: 734px;
+    width: 1286px; 
+    background: url(../img/Сompleted-bg.png);
+    background-size: cover;
+}
+.done-info {
+    background-color: #FCDB5C;
+    width: 393px;
+    height: 307px;
+    position: absolute;
+    margin-bottom: 37.4em;
+    margin-right: 10em;
+}
+
+.done-info__title{
+    font-family: Raleway;
+    font-weight: 500;
+    color: #383736;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2%;
+}
+.done-info__sub{
+    font-family: Raleway;
+    font-weight: 500;
+    color: #383736;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3%;
+}
+.done-info__phone{
+    font-family: Raleway;
+    font-weight: 500;
+    color: #383736;
+    font-size: 27px;
+    margin-left: 20%;
+    margin-top: 50%;
+}
+
+.done-info__btn{
+    width: 302px;
+    height: 70px;
+    transform: skew(-20deg);
+    border: none;
+    background: #2C2C32;
+    text-transform: uppercase;
+    margin-left: 10%;
+    margin-top: 60px;
+    font-size: 18px;
+    color: white;
+    font-family: Raleway;
+}
+
+.completed-content__item{
+    padding: 0 20%;
+}
+
+
+
+.complete-obj__name {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #787878;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+.completed-content__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    color: white;
+
+}
+
+.complete-obj__middle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 32px;
+    margin-left: 15%;
+}
+
+.line3 {
+    margin-top: 2%;
+    width: 700px;
+    border-top: 1px solid #787878;
+
+}
+
+.option-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.option-item__title{
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.option-item__title b{
+    text-transform: uppercase;
+}
+
+.done-line {
+    font-family: 'Raleway';
+    color: #FCDB5C;
+    font-size: 16px;
+}
+
+.option-item__desc p{
+    font-family: 'Raleway';
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+
+.completed-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.completed-nav {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    grid-gap: 26px;
+    margin-left: 15%;
+}
+
+.completed-count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 60%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #A1A1A1;
+}
+
+.line4 {
+    width: 26px;
+    height: 1px;
+    background: #A1A1A1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*end completed*/
+
+.gift-block3{
+    background-color: #FCDB5C;
+    width:396px;
+    height: 632px;
+    position: absolute;
+    margin-top: -24.6em;
+    margin-left: 55em;
+}
+
+/* start free rock */
+
+.free_rock{
+    background: url(../img/free_rock_background.png);
+    background-repeat: no-repeat;
+    height: 320px;
+    background-color: #2c2c32;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 15% 0% 15%;
+    justify-content: space-between;
+}
+.free_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #F7F6F2;
+    font-size: 35px;
+    padding-right: 3%;
+    border-right: #FCDB5C solid 0.5px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.free_right h1{
+   font-weight: bold;
+    color: #FCDB5C;
+    font-size: 67px;
+}
+.free_center{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #A1A1A1;
+    font-size: 24px;
+    justify-content: space-between;
+    padding-left: 3%;
+    width: 740px;
+}
+.free_center h2{
+     color: #FCDB5C;
+     font-size: 41px;
+     font-weight: 400;
+ }
+ .free_rock button{
+    width: 302px;
+    height: 70px;
+    transform: skew(-20deg);
+    border: none;
+    background: #FCDB5C;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #2C2C32;
+    font-weight: bold;
+ }
+ .free_center_right{
+    display: flex;
+    flex-direction: row;
+ }
+/* end free rock */
