@@ -35,12 +35,12 @@ AppAsset::register($this);
             </div>
 
             <nav class="navbar">
-                <a href="index">Главная</a>
-                <a href="construction">Производство</a>
-                <a href="catalog">Каталог</a>
+                <a href="/site/index">Главная</a>
+                <a href="/site/construction">Производство</a>
+                <a href="/site/catalog">Каталог</a>
                 <a href="">Услуги</a>
                 <a href="">Партнеры</a>
-                <a href="about">О компании</a>
+                <a href="/site/about">О компании</a>
             </nav>
         </div>
 
@@ -91,12 +91,12 @@ AppAsset::register($this);
                     </a>
                     <div class="footer__menu">
                         <ul>
-                            <li><a href="index">Главная</a></li>
-                            <li><a href="construction">Производство</a></li>
-                            <li><a href="catalog">Каталог</a></li>
+                            <li><a href="/site/index">Главная</a></li>
+                            <li><a href="/site/construction">Производство</a></li>
+                            <li><a href="/site/catalog">Каталог</a></li>
                             <li><a href="#">Услуги</a></li>
                             <li><a href="#">Партнеры</a></li>
-                            <li><a href="about">О компании</a></li>
+                            <li><a href="/site/about">О компании</a></li>
                         </ul>
                         <div class="footer-social">
                             <a href="#">
