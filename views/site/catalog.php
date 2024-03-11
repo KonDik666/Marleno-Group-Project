@@ -69,86 +69,25 @@ $this->title = 'My Yii Application';
             </div>
 
             <div class="catalog">
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img class="ere" src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
+               
 
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
+                <?php foreach($catalog as $cat):?>
+                    <?php
+                        echo '<div class="custom-card">';
+                        echo '<div class="triangle"></div>';
+                        echo \yii\helpers\Html::img("@web/{$cat->imagePath}");
+                        echo '<div class="triangle2"></div>';
+                        echo '<p>'; echo $cat->name; echo'</p>';
+                        echo '<p>'; echo $cat->cost; echo' руб за кв. метр</p>';
+                        echo '<button>Купить</button>';
+                        echo '</div>';
+                    ?>
+                <?php endforeach; ?>
 
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
 
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
+                
 
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
-
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
-
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
-
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
-
-                <div class="custom-card">
-                    <div class="triangle"></div>
-                    <img src="../../img/granite.png" alt="картинка товара">
-                    <div class="triangle2"></div>
-                    <p>Наименование</p>
-                    <p>Стоимость</p>
-                    <button>Купить</button>
-                </div>
+                
 
             </div>
         </div>

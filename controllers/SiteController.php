@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Catalog;
 
 class SiteController extends Controller
 {
@@ -69,7 +70,9 @@ class SiteController extends Controller
     }
 
     public function actionCatalog(){
-        return $this->render('catalog');
+
+        $catalog = Catalog::find()->all();
+        return $this->render('catalog', compact('catalog'));
     }
 
 

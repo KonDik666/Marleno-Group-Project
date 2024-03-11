@@ -742,8 +742,8 @@ background: linear-gradient(104deg, rgba(252,219,92,1) 84%, rgba(255,255,255,1) 
     width:396px;
     height: 632px;
     position: absolute;
-    left:77.5em;
-    top:276em;
+    margin-left: 65em;
+    margin-top: -28em;
 }
 /* end gifts */
 
