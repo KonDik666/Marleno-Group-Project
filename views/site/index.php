@@ -548,13 +548,13 @@ $this->title = 'My Yii Application';
                     <div class="faq-box">
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq1" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img1">
                                 </div>
                                 Как много времени займет процесс призводства?
 
                             </div>
-                            <div class="faq-box__desc">
+                            <div class="faq-box__desc" id="desc1">
                                 <p>Процесс произодства плит в среднем занимает неделю, в редких случаях может
                                     потребовать 2 недели и более в зависимости от сложности проекта. Мы всегда готовы
                                     предоставить скидку нашим клиентам если заказ по каким-либо причинам задержался.</p>
@@ -563,46 +563,46 @@ $this->title = 'My Yii Application';
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq2" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img2">
                                 </div>
                                 Как я могу проверить качество материала?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc2">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq3" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img3">
                                 </div>
                                 Как правильно оформить заказ?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc3">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq4" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img4">
                                 </div>
                                  Какие плиты лучше подобрать для облицовки здания?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc4">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq5" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img5">
                                 </div>
                                 Где я могу найти помощь в выборе плит?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc5">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                     </div>
@@ -618,7 +618,37 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
         </div>
+
+        
     </section>
+
+    <script>
+
+            function OpenFunc(id){
+               
+                
+               current= document.getElementById(id);
+               curId=id.slice(-1);
+               
+               currentDescription=document.getElementById("desc"+curId);
+               currentImage=document.getElementById("img"+curId);
+
+               isDisplay= window.getComputedStyle(currentDescription).display;
+
+               if(isDisplay=="block"){
+                currentDescription.style.display="none";
+                currentImage.src="../../img/Plus_circle_white.svg";
+               }
+               else{
+                currentDescription.style.display="block";
+                currentImage.src="../../img/Minus_circle_white.svg";
+               }
+            }
+        
+
+        </script>    
+
+    
 
     <section>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3539023eca36e9fb8e1f56ecad884b0f6ecf9334ff6f335ef81bdb003101a324&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>

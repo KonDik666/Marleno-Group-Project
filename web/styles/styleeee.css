@@ -1123,6 +1123,10 @@ background: linear-gradient(104deg, rgba(252,219,92,1) 84%, rgba(255,255,255,1) 
     color: #FFFFFF;
     padding: 20px 0 0 39px;
     display: none;
+    
+}
+.invis{
+    display: none;
 }
 
 
