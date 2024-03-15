@@ -397,10 +397,10 @@ $this->title = 'My Yii Application';
                     <div class="fact-list">
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>
+                                <div class="fact-list__button" id="act1" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image1"></div>
                                 Собственная добыча камней для плит
                             </div>
-                            <div class="fact-list__desc">Компания “Marleno Group” имеет 10 собственных карьеров для
+                            <div class="fact-list__desc" id="descr1">Компания “Marleno Group” имеет 10 собственных карьеров для
                                 добычи
                                 различных типов камней, таких как гранит, мрамор, известняк и другие натуральные
                                 материалы.
@@ -410,27 +410,27 @@ $this->title = 'My Yii Application';
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственные заводы для обработки камня
+                                <div class="fact-list__button" id="act2" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image2"></div>Собственные заводы для обработки камня
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr2"><!--описание факта--></div>
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственный отдел логистики и снабжения
+                                <div class="fact-list__button" id="act3" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image3"></div>Собственный отдел логистики и снабжения
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr3"><!--описание факта--></div>
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственный отдел инженерных изысканий
+                                <div class="fact-list__button" id="act4" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image4"></div>Собственный отдел инженерных изысканий
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr4"><!--описание факта--></div>
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственные склады по всей России
+                                <div class="fact-list__button" id="act5" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image5"></div>Собственные склады по всей России
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr5"><!--описание факта--></div>
                         </div>
                     </div>
                 </div>
@@ -626,14 +626,13 @@ $this->title = 'My Yii Application';
 
             function OpenFunc(id){
                
-                
                current= document.getElementById(id);
                curId=id.slice(-1);
-               
-               currentDescription=document.getElementById("desc"+curId);
-               currentImage=document.getElementById("img"+curId);
-
-               isDisplay= window.getComputedStyle(currentDescription).display;
+                
+               if(id.charAt(0)=="f"){
+                 currentDescription=document.getElementById("desc"+curId);
+                 currentImage=document.getElementById("img"+curId);
+                 isDisplay= window.getComputedStyle(currentDescription).display;
 
                if(isDisplay=="block"){
                 currentDescription.style.display="none";
@@ -643,6 +642,25 @@ $this->title = 'My Yii Application';
                 currentDescription.style.display="block";
                 currentImage.src="../../img/Minus_circle_white.svg";
                }
+               }
+               else if(id.charAt(0)=="a"){
+                 currentDescription=document.getElementById("descr"+curId);
+                 currentImage=document.getElementById("image"+curId);
+                 isDisplay= window.getComputedStyle(currentDescription).display;
+
+               if(isDisplay=="block"){
+                currentDescription.style.display="none";
+                currentImage.src="../../img/Plus_circle.svg";
+               }
+               else{
+                currentDescription.style.display="block";
+                currentImage.src="../../img/Minus_circle.svg";
+               }
+               } 
+              
+               
+              
+               
             }
         
 

@@ -810,6 +810,7 @@ background: linear-gradient(104deg, rgba(252,219,92,1) 84%, rgba(255,255,255,1) 
     text-transform: uppercase;
     color: #383736;
     padding: 20px 0 0;
+
 }
 .fact-list__title{
     position: relative;
@@ -821,12 +822,24 @@ background: linear-gradient(104deg, rgba(252,219,92,1) 84%, rgba(255,255,255,1) 
     font-size: 27px;
     line-height: 32px;
     user-select: none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.fact-list__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    
 }
 
 .fact-list__item{
     background: #F7F6F2;
     border-radius: 10px;
     position: relative;
+    width:1132px;
 }
 .fact-list__desc{
     padding: 5px 20px 25px 74px;
