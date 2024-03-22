@@ -6,9 +6,11 @@ $this->title = 'My Yii Application';
 ?>
 
 <section class="guarantee">
-        <h2>Почему заказать нужно у нас:</h2>
-        <P>В случае срыва сроков вернем 20% от стоимости</P>
-        <div class="guarantee_list">
+        <div class="guarant anim">
+            <h2>Почему заказать нужно у нас:</h2>
+            <P>В случае срыва сроков вернем 20% от стоимости</P>
+        </div>
+        <div class="guarantee_list anim">
             <div class="guarantee_block">
             <div class="guarantee_img_block_black"><img src="../../img/Quality.svg" alt="Качество"></div>
             <p>Гарантируем срок выполнения заказа. В случае срыва срока - вернем 20% от стоимости работ.</p>
@@ -30,8 +32,8 @@ $this->title = 'My Yii Application';
 
     <section>
         <div class="release-objects">
-            <img class="wall" src="../../img/Wall.jpg" alt="Стена">
-            <div class="release-obj-info">
+            <img class="wall anim" src="../../img/Wall.jpg" alt="Стена">
+            <div class="release-obj-info anim">
                 <p class="release-obj__name">ООО “Marleno group”</p>
                 <p class="release-obj__title">Реализованные объекты</p>
                 <p class="line"></p>
@@ -68,7 +70,7 @@ $this->title = 'My Yii Application';
 
 
     <section class="black_gift">
-        <div class="black_gold_gift">
+        <div class="black_gold_gift anim">
             <div class="grey_font">
             <div>
             <p class="gift-low">от отдела продаж MArleno group</p>
@@ -83,7 +85,7 @@ $this->title = 'My Yii Application';
             <p class="gift20">*При первом заказе от 20тыс.руб</p>
         </div>
          </div>
-         <div class="gift-block3">
+         <div class="gift-block2 anim">
             <p class="topic"><mark class="bold">Подарок</mark> на вашу</br> первую покупку</p>
             <div class="gift-container">
                 <img src="../../img/Gift.png" alt="подарок">
@@ -102,12 +104,12 @@ $this->title = 'My Yii Application';
 
 
     <section>
-        <div class="comment_client">
+        <div class="comment_client anim">
             <h2>Отзывы клиентов <br>
                 о нашей работе</h2>
             <p>Каждый отзыв набран текстом для удобства его</br> чтения и к нему прикреплена фотография </br>реального отзыва.</p>
         </div>
-        <div class="comment_line">
+        <div class="comment_line anim">
             <div class="comment">
                 <p class="client">ЗАО “СтройБизнес”</p>
                 <p class="comment_text">Весь процесс облицовки здания гранитными плитами прошел гладко и без каких-либо проблем. Благодаря
@@ -133,7 +135,7 @@ $this->title = 'My Yii Application';
                 <p class="full_comment">весь отзыв</p>
             </div>
         </div>
-        <div class="comment_line2">
+        <div class="comment_line2 anim">
             <div class="arrow_comment">
             <img src="../../img/Arrow_Left.png" alt="Влево">
             <img src="../../img/Arrow_Right.png" alt="Вправо">
@@ -149,19 +151,19 @@ $this->title = 'My Yii Application';
 
 
     <section>
-        <div class="faq-wrap">
+        <div class="faq-wrap anim">
             <div class="container">
                 <div class="faq">
                     <div class="faq-box">
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq1" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img1">
                                 </div>
                                 Как много времени займет процесс призводства?
 
                             </div>
-                            <div class="faq-box__desc">
+                            <div class="faq-box__desc" id="desc1">
                                 <p>Процесс произодства плит в среднем занимает неделю, в редких случаях может
                                     потребовать 2 недели и более в зависимости от сложности проекта. Мы всегда готовы
                                     предоставить скидку нашим клиентам если заказ по каким-либо причинам задержался.</p>
@@ -170,51 +172,51 @@ $this->title = 'My Yii Application';
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq2" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img2">
                                 </div>
                                 Как я могу проверить качество материала?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc2">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq3" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img3">
                                 </div>
                                 Как правильно оформить заказ?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc3">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq4" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img4">
                                 </div>
                                  Какие плиты лучше подобрать для облицовки здания?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc4">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq5" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img5">
                                 </div>
                                 Где я могу найти помощь в выборе плит?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc5">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                     </div>
                     <div class="faq-desc">
-                        <div class="faq-desc__title">часто <br>задаваемые <br>вопросы</div>
+                        <div class="faq-desc__title anim">часто <br>задаваемые <br>вопросы</div>
                         <div class="faq-desc__middle">
                             <div class="faq-desc__sub">Не нашли нужного ответа?</div>
                             <p>Вы всегда можете уточнить любой интересующий вас вопрос у нашего менеджера по телефону
@@ -225,9 +227,11 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
         </div>
+
+        
     </section>
 
 
-    <section>
+    <section class="anim">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3539023eca36e9fb8e1f56ecad884b0f6ecf9334ff6f335ef81bdb003101a324&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     </section>

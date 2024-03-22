@@ -9,8 +9,8 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
  <section class="about">
-        <h1>Контактные данные</h1>
-        <div class="grey_about">
+        <h1 class="anim">Контактные данные</h1>
+        <div class="grey_about anim">
             <div>
                 <p class="big_grey_font">ОФИС</p>
                 <div class="mail_phone"><img src="../../img/Phone_call2.png" alt="Телефон"><p> 8(000) 000 - 00 - 00</p></div>
@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <section>
-        <div class="raq-wrap">
+        <div class="raq-wrap anim">
             <div class="container">
                 <div class="req">
                     <div class="req-content">
@@ -104,7 +104,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         </div>
                     </div>
                     <div class="req-info">
-                        <div class="req-content__title">реквизиты <br>компании</div>
+                        <div class="req-content__title anim">реквизиты <br>компании</div>
                         <div class="raq-desc__middle">
                             <div class="req-info__title">Не нашли нужного ответа?</div>
                             <p class="req-info__desc">Вы всегда можете уточнить любой интересующий <br> вас вопрос у нашего
@@ -123,6 +123,6 @@ $this->params['breadcrumbs'][] = $this->title;
     </section>
 
 
-    <section>
+    <section class="anim">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3539023eca36e9fb8e1f56ecad884b0f6ecf9334ff6f335ef81bdb003101a324&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     </section>

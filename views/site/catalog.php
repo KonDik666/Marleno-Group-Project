@@ -7,9 +7,9 @@ $this->title = 'My Yii Application';
 
 
 <section class="main-catalog">
-        <h3>Каталог плит</h3>
+        <h3 class="anim">Каталог плит</h3>
         <div class="catalog-row">
-        <div class="filters-bg">
+        <div class="filters-bg anim">
             <div class="filters-container">
             <div class="filters-items">
                 <h4>Материал</h4>
@@ -63,7 +63,7 @@ $this->title = 'My Yii Application';
         </div>
 
         <div class="customs-catalog">
-            <div class="sorting">
+            <div class="sorting anim">
                 <p>Сортировать:</p>
                 <a><img src="../../img/arrow.svg" alt="arrow"></a>
             </div>
@@ -73,7 +73,7 @@ $this->title = 'My Yii Application';
 
                 <?php foreach($catalog as $cat):?>
                     <?php
-                        echo '<div class="custom-card">';
+                        echo '<div class="custom-card anim">';
                         echo '<div class="triangle"></div>';
                         echo \yii\helpers\Html::img("@web/{$cat->imagePath}");
                         echo '<div class="triangle2"></div>';
@@ -95,7 +95,7 @@ $this->title = 'My Yii Application';
     </section>
 
 
-    <section class="cost-calculation">
+    <section class="cost-calculation anim">
         <div class="cost-text">
             <h2>Сделайте свой первый заказ</br>
                 и получите скидку 25%
@@ -122,13 +122,13 @@ $this->title = 'My Yii Application';
 
 
     <section>
-        <div class="complete-obj__middle">Выполненные проекты <span>с 2013 года</span></div>
+        <div class="complete-obj__middle anim">Выполненные проекты <span>с 2013 года</span></div>
 
         <div class="completed-gallery">
             <div class="completed-gallery__item">
-                <img src="../../img/house.png">
+                <img src="../../img/house.png" class="house_completed anim">
             </div>
-            <div class="done-info">
+            <div class="done-info anim">
                 <div class="done-info__title">Подробная информация <br>о строительстве объекта</div>
                 <div class="done-info__sub">Стоимость, сроки реализации <br> уточнить у нашего менеджера</div>
                 <a href="#" class="done-info__phone">8 (800) 550-28-84</a>
@@ -136,7 +136,7 @@ $this->title = 'My Yii Application';
             </div>
 
 
-            <div class="completed-content">
+            <div class="completed-content anim">
                 <div class="completed-content__slider">
                     <div class="completed-content__item">
                         <p class="complete-obj__name">ООО “Marleno group”</p>
@@ -193,7 +193,7 @@ $this->title = 'My Yii Application';
 
 
     <section class="black_gift">
-        <div class="black_gold_gift">
+        <div class="black_gold_gift anim">
             <div class="grey_font">
             <div>
             <p class="gift-low">от отдела продаж MArleno group</p>
@@ -208,7 +208,7 @@ $this->title = 'My Yii Application';
             <p class="gift20">*При первом заказе от 20тыс.руб</p>
         </div>
          </div>
-         <div class="gift-block2">
+         <div class="gift-block2 anim">
             <p class="topic"><mark class="bold">Подарок</mark> на вашу</br> первую покупку</p>
             <div class="gift-container">
                 <img src="../../img/Gift.png" alt="подарок">
@@ -227,12 +227,12 @@ $this->title = 'My Yii Application';
 
 
     <section class="fact-block">
-        <div class="fact-wrap">
+        <div class="fact-wrap anim">
             <div class="container">
                 <div class="fact">
-                    <div class="title-fact__title">Факты о компании “Marleno Group”</div>
-                    <div class="fact-sub__sub">полный цикл строительства от проектирования до ввода в эксплуатацию</div>
-                    <div class="fact-box">
+                    <div class="title-fact__title anim">Факты о компании “Marleno Group”</div>
+                    <div class="fact-sub__sub anim">полный цикл строительства от проектирования до ввода в эксплуатацию</div>
+                    <div class="fact-box anim">
                         <div class="fact-box__item">
                             <div class="fact-box__title">5</div>
                             <div class="fact-box__desc">лет <br>на рынке</div>
@@ -246,13 +246,13 @@ $this->title = 'My Yii Application';
                             <div class="fact-box__desc">человек <br>работает у нас</div>
                         </div>
                     </div>
-                    <div class="fact-list">
+                    <div class="fact-list anim">
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>
+                                <div class="fact-list__button" id="act1" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image1"></div>
                                 Собственная добыча камней для плит
                             </div>
-                            <div class="fact-list__desc">Компания “Marleno Group” имеет 10 собственных карьеров для
+                            <div class="fact-list__desc" id="descr1">Компания “Marleno Group” имеет 10 собственных карьеров для
                                 добычи
                                 различных типов камней, таких как гранит, мрамор, известняк и другие натуральные
                                 материалы.
@@ -262,27 +262,27 @@ $this->title = 'My Yii Application';
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственные заводы для обработки камня
+                                <div class="fact-list__button" id="act2" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image2"></div>Собственные заводы для обработки камня
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr2"><!--описание факта--></div>
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственный отдел логистики и снабжения
+                                <div class="fact-list__button" id="act3" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image3"></div>Собственный отдел логистики и снабжения
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr3"><!--описание факта--></div>
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственный отдел инженерных изысканий
+                                <div class="fact-list__button" id="act4" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image4"></div>Собственный отдел инженерных изысканий
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr4"><!--описание факта--></div>
                         </div>
                         <div class="fact-list__item">
                             <div class="fact-list__title">
-                                <div class="fact-list__button"></div>Собственные склады по всей России
+                                <div class="fact-list__button" id="act5" onclick="OpenFunc(this.id)"><img src="../../img/Plus_circle.svg" id="image5"></div>Собственные склады по всей России
                             </div>
-                            <div class="fact-list__desc"><!--описание факта--></div>
+                            <div class="fact-list__desc" id="descr5"><!--описание факта--></div>
                         </div>
                     </div>
                 </div>
@@ -293,29 +293,29 @@ $this->title = 'My Yii Application';
 
     <section class="free_rock">
         <div class="free_center_right">
-        <div class="free_right">
+        <div class="free_right anim">
             <h1>3</h1>
             <p>простых</p>
             <p>шага</p>
         </div>
-        <div class="free_center">
+        <div class="free_center anim">
             <h2>ПОЛУЧИТЕ БЕСПЛАТНО <br>
                 ОБРАЗЕЦ КАМНЯ</h2>
             <p>ОСТАВЬТЕ ЗАЯВКУ У НАС НА САЙТЕ И МЫ ПРИШЛЕМ ВАМ <br>
                 ОБРАЗЕЦ МАТЕРИАЛА ДЛЯ ВАШИХ ПЛИТ</p>
         </div>
     </div>
-            <button>Оставить заявку</button>
+            <button class="anim">Оставить заявку</button>
     </section>
 
 
     <section>
-        <div class="comment_client">
+        <div class="comment_client anim">
             <h2>Отзывы клиентов <br>
                 о нашей работе</h2>
             <p>Каждый отзыв набран текстом для удобства его</br> чтения и к нему прикреплена фотография </br>реального отзыва.</p>
         </div>
-        <div class="comment_line">
+        <div class="comment_line anim">
             <div class="comment">
                 <p class="client">ЗАО “СтройБизнес”</p>
                 <p class="comment_text">Весь процесс облицовки здания гранитными плитами прошел гладко и без каких-либо проблем. Благодаря
@@ -341,7 +341,7 @@ $this->title = 'My Yii Application';
                 <p class="full_comment">весь отзыв</p>
             </div>
         </div>
-        <div class="comment_line2">
+        <div class="comment_line2 anim">
             <div class="arrow_comment">
             <img src="../../img/Arrow_Left.png" alt="Влево">
             <img src="../../img/Arrow_Right.png" alt="Вправо">
@@ -356,19 +356,19 @@ $this->title = 'My Yii Application';
     </section>
 
     <section>
-        <div class="faq-wrap">
+        <div class="faq-wrap anim">
             <div class="container">
                 <div class="faq">
                     <div class="faq-box">
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq1" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img1">
                                 </div>
                                 Как много времени займет процесс призводства?
 
                             </div>
-                            <div class="faq-box__desc">
+                            <div class="faq-box__desc" id="desc1">
                                 <p>Процесс произодства плит в среднем занимает неделю, в редких случаях может
                                     потребовать 2 недели и более в зависимости от сложности проекта. Мы всегда готовы
                                     предоставить скидку нашим клиентам если заказ по каким-либо причинам задержался.</p>
@@ -377,51 +377,51 @@ $this->title = 'My Yii Application';
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq2" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img2">
                                 </div>
                                 Как я могу проверить качество материала?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc2">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq3" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img3">
                                 </div>
                                 Как правильно оформить заказ?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc3">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq4" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img4">
                                 </div>
                                  Какие плиты лучше подобрать для облицовки здания?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc4">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                         <div class="faq-box__item">
                             <div class="faq-box__title">
-                                <div class="faq-box__button">
-                                    <img src="../../img/Plus_circle_white.svg">
+                                <div class="faq-box__button" id="faq5" onclick="OpenFunc(this.id)">
+                                    <img src="../../img/Plus_circle_white.svg" id="img5">
                                 </div>
                                 Где я могу найти помощь в выборе плит?
                             </div>
-                            <div class="faq-box__desc">
-                                <p><!--ответ на вопрос--></p>
+                            <div class="faq-box__desc" id="desc5">
+                                <p>ответ на вопрос</p>
                             </div>
                         </div>
                     </div>
                     <div class="faq-desc">
-                        <div class="faq-desc__title">часто <br>задаваемые <br>вопросы</div>
+                        <div class="faq-desc__title anim">часто <br>задаваемые <br>вопросы</div>
                         <div class="faq-desc__middle">
                             <div class="faq-desc__sub">Не нашли нужного ответа?</div>
                             <p>Вы всегда можете уточнить любой интересующий вас вопрос у нашего менеджера по телефону
@@ -432,9 +432,11 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
         </div>
+
+        
     </section>
 
 
-    <section>
+    <section class="anim">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3539023eca36e9fb8e1f56ecad884b0f6ecf9334ff6f335ef81bdb003101a324&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     </section>

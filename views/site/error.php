@@ -11,7 +11,7 @@ $this->title = $name;
 ?>
 
 
-<section class="page404">
+<section class="page404 anim">
         <div class="column404">
     <h1>404</h1>
     <p class="font_bold_404">Потеряла</p>

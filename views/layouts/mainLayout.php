@@ -18,9 +18,9 @@ AppAsset::register($this);
 
 <body>
 <?php $this->beginBody() ?>
-    <header>
+    <header class="anim">
         <div>
-            <div class="header-top">
+            <div class="header-top anim">
                 <img src="../../web/img/logo.png" width="230" height="110" alt="логотип">
                 <div class="icon-text">
                     <img src="../../web/img/location.png" width="24" height="24" alt="символ расположения">
@@ -34,7 +34,7 @@ AppAsset::register($this);
                 </div>
             </div>
 
-            <nav class="navbar">
+            <nav class="navbar anim">
                 <a href="/site/index">Главная</a>
                 <a href="/site/construction">Производство</a>
                 <a href="/site/catalog">Каталог</a>
@@ -45,7 +45,7 @@ AppAsset::register($this);
         </div>
 
         <div class="bg">
-            <div class="info-container">
+            <div class="info-container anim">
                 <div class="info-text">
                     <h1>Большой выбор</br> плит</h1>
                     <p>ГРАНИТНЫЕ И КЕРАМИЧЕСКИЕ ПЛИТЫ ОТ</br> 5 тыс.руб.</p>
@@ -63,7 +63,7 @@ AppAsset::register($this);
 
 
             </div>
-            <div class="gift-block">
+            <div class="gift-block anim">
                 <p class="topic"><mark class="bold">Подарок</mark> на вашу</br> первую покупку</p>
                 <div class="gift-container">
                     <img src="../../web/img/Gift.png" alt="подарок">
@@ -84,7 +84,7 @@ AppAsset::register($this);
 
     <footer>
         <div class="container">
-            <div class="footer">
+            <div class="footer anim">
                 <div class="footer-top">
                     <a href="#" class="footer__logo">
                         <img src="../../img/logo2.png" />
