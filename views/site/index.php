@@ -5,7 +5,7 @@
 $this->title = 'My Yii Application';
 ?>
 
-<section class="cost-calculation">
+<section class="cost-calculation anim">
         <div class="cost-text">
             <h2>Сделайте свой первый заказ</br>
                 и получите скидку 25%
@@ -30,8 +30,8 @@ $this->title = 'My Yii Application';
     </section>
 
     <section class="map">
-        <img src="../../img/Map.png" alt="Карта" width="981px" height="581px">
-        <div class="stock_list">
+        <img class="Russia anim" src="../../img/Map.png" alt="Карта" width="981px" height="581px">
+        <div class="stock_list anim">
             <div class="back">
                 <img src="../../img/Logo2.png" alt="Лого" width="164px" height="66px">
 
@@ -60,14 +60,14 @@ $this->title = 'My Yii Application';
     </section>
 
     <section class="stages">
-        <div class="stages-text">
+        <div class="stages-text anim">
             <h2>Этапы производства</h2>
             <p>Каждый этап выполняем своими силами</p>
         </div>
 
         <div class="stages-container">
             <div class="stages-list-container">
-                <ol class="stages-list">
+                <ol class="stages-list anim">
                     <li class="li1" id="elem1" onclick="ShowFunc(this.id)">
                         <p>01</p>Добыча камня из наших<br>
                         карьеров
@@ -102,7 +102,7 @@ $this->title = 'My Yii Application';
                     </li>
                 </ol>
             </div>
-            <div class="stages-bg" id="backgroundId">
+            <div class="stages-bg anim" id="backgroundId">
                 <div class="stages-description">
                     <div class="stages-description-text" id="stage1">
 
@@ -304,8 +304,8 @@ $this->title = 'My Yii Application';
 
     <section>
         <div class="release-objects">
-            <img class="wall" src="../../img/Wall.jpg" alt="Стена">
-            <div class="release-obj-info">
+            <img class="wall anim" src="../../img/Wall.jpg" alt="Стена">
+            <div class="release-obj-info anim">
                 <p class="release-obj__name">ООО “Marleno group”</p>
                 <p class="release-obj__title">Реализованные объекты</p>
                 <p class="line"></p>
@@ -342,7 +342,7 @@ $this->title = 'My Yii Application';
 
 
     <section class="black_gift">
-        <div class="black_gold_gift">
+        <div class="black_gold_gift anim">
             <div class="grey_font">
             <div>
             <p class="gift-low">от отдела продаж MArleno group</p>
@@ -357,7 +357,7 @@ $this->title = 'My Yii Application';
             <p class="gift20">*При первом заказе от 20тыс.руб</p>
         </div>
          </div>
-         <div class="gift-block2">
+         <div class="gift-block2 anim">
             <p class="topic"><mark class="bold">Подарок</mark> на вашу</br> первую покупку</p>
             <div class="gift-container">
                 <img src="../../img/Gift.png" alt="подарок">
@@ -378,9 +378,9 @@ $this->title = 'My Yii Application';
         <div class="fact-wrap">
             <div class="container">
                 <div class="fact">
-                    <div class="title-fact__title">Факты о компании “Marleno Group”</div>
-                    <div class="fact-sub__sub">полный цикл строительства от проектирования до ввода в эксплуатацию</div>
-                    <div class="fact-box">
+                    <div class="title-fact__title anim">Факты о компании “Marleno Group”</div>
+                    <div class="fact-sub__sub anim">полный цикл строительства от проектирования до ввода в эксплуатацию</div>
+                    <div class="fact-box anim">
                         <div class="fact-box__item">
                             <div class="fact-box__title">5</div>
                             <div class="fact-box__desc">лет <br>на рынке</div>
@@ -394,7 +394,7 @@ $this->title = 'My Yii Application';
                             <div class="fact-box__desc">человек <br>работает у нас</div>
                         </div>
                     </div>
-                    <div class="fact-list">
+                    <div class="fact-list anim">
                         <div class="fact-list__item">
                             <div class="fact-list__title">
                                 <div class="fact-list__button"></div>
@@ -440,19 +440,19 @@ $this->title = 'My Yii Application';
 
 
     <section class="careers">
-        <div class="careers-desc">
+        <div class="careers-desc anim">
             <p>месторождения, используемые Marleno group</p>
         </div>
 
-        <div class="careers-header">
+        <div class="careers-header anim">
             <p>месторождения камня для плит</br>
                 нашей компании</p>
-            <p class="yellow-text"><mark class="ptsans">10</mark></br>
+            <p class="yellow-text anim"><mark class="ptsans">10</mark></br>
                 карьеров</p>
         </div>
 
         <div class="careers-photo">
-            <div class="careers-item numb1">
+            <div class="careers-item numb1 anim">
                 <div class="careers-dark-bg element1">
                 <div class="careers-text-container">
                 <p class="career-name">Московский гранитный карьер</p>
@@ -462,7 +462,7 @@ $this->title = 'My Yii Application';
                 </div>
             </div>
 
-            <div class="careers-item numb2">
+            <div class="careers-item numb2 anim">
                 <div class="careers-dark-bg element2">
                     <div class="careers-text-container">
                     <p class="career-name">Екатеринбуржский мраморный карьер</p>
@@ -471,7 +471,7 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
             </div>
-            <div class="careers-item numb3">
+            <div class="careers-item numb3 anim">
                 <div class="careers-dark-bg element3">
                     <div class="careers-text-container">
                     <p class="career-name">Ильинский мраморный карьер</p>
@@ -480,7 +480,7 @@ $this->title = 'My Yii Application';
                     </div>
                 </div>
             </div>
-            <div class="careers-item numb4">
+            <div class="careers-item numb4 anim">
                 <div class="careers-dark-bg element4">
                     <div class="careers-text-container">
                     <p class="career-name">Грязновский гранитный карьер</p>
@@ -495,12 +495,12 @@ $this->title = 'My Yii Application';
 
 
     <section>
-        <div class="comment_client">
+        <div class="comment_client anim">
             <h2>Отзывы клиентов <br>
                 о нашей работе</h2>
             <p>Каждый отзыв набран текстом для удобства его</br> чтения и к нему прикреплена фотография </br>реального отзыва.</p>
         </div>
-        <div class="comment_line">
+        <div class="comment_line anim">
             <div class="comment">
                 <p class="client">ЗАО “СтройБизнес”</p>
                 <p class="comment_text">Весь процесс облицовки здания гранитными плитами прошел гладко и без каких-либо проблем. Благодаря
@@ -526,7 +526,7 @@ $this->title = 'My Yii Application';
                 <p class="full_comment">весь отзыв</p>
             </div>
         </div>
-        <div class="comment_line2">
+        <div class="comment_line2 anim">
             <div class="arrow_comment">
             <img src="../../img/Arrow_Left.png" alt="Влево">
             <img src="../../img/Arrow_Right.png" alt="Вправо">
@@ -542,7 +542,7 @@ $this->title = 'My Yii Application';
 
 
     <section>
-        <div class="faq-wrap">
+        <div class="faq-wrap anim">
             <div class="container">
                 <div class="faq">
                     <div class="faq-box">
@@ -607,7 +607,7 @@ $this->title = 'My Yii Application';
                         </div>
                     </div>
                     <div class="faq-desc">
-                        <div class="faq-desc__title">часто <br>задаваемые <br>вопросы</div>
+                        <div class="faq-desc__title anim">часто <br>задаваемые <br>вопросы</div>
                         <div class="faq-desc__middle">
                             <div class="faq-desc__sub">Не нашли нужного ответа?</div>
                             <p>Вы всегда можете уточнить любой интересующий вас вопрос у нашего менеджера по телефону
@@ -620,6 +620,6 @@ $this->title = 'My Yii Application';
         </div>
     </section>
 
-    <section>
+    <section class="anim">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3539023eca36e9fb8e1f56ecad884b0f6ecf9334ff6f335ef81bdb003101a324&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     </section>
