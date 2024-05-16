@@ -10,6 +10,7 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Catalog;
+use app\models\Reviews;
 
 class SiteController extends Controller
 {
@@ -62,7 +63,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $reviews = Reviews::find()->all();
+        return $this->render('index', compact('reviews'));
     }
 
     public function actionConstruction(){
@@ -73,6 +75,22 @@ class SiteController extends Controller
 
         $catalog = Catalog::find()->all();
         return $this->render('catalog', compact('catalog'));
+    }
+
+    public function actionPartners(){
+        return $this->render('partners');
+    }
+    public function actionConsultations(){
+        return $this->render('consultations');
+    }
+    public function actionDelievers(){
+        return $this->render('delievers');
+    }
+    public function actionMeasurements(){
+        return $this->render('measurements');
+    }
+    public function actionMontage(){
+        return $this->render('montage');
     }
 
 

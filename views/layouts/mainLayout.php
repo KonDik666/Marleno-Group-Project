@@ -11,6 +11,12 @@ AppAsset::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="
+https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.css
+" rel="stylesheet">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -18,6 +24,7 @@ AppAsset::register($this);
 
 <body>
 <?php $this->beginBody() ?>
+
     <header class="anim">
         <div>
             <div class="header-top anim">
@@ -38,49 +45,44 @@ AppAsset::register($this);
                 <a href="/site/index">Главная</a>
                 <a href="/site/construction">Производство</a>
                 <a href="/site/catalog">Каталог</a>
-                <a href="">Услуги</a>
-                <a href="">Партнеры</a>
+                <div id="services_on"><p  href="">Услуги</p><div class="trangle"></div>
+                <!-- <script>
+                     serviceOn=document.getElementById("services_on");
+                     serviceMenu=document.getElementById("services_menu");
+serviceOn.addEventListener("click", function(){
+    
+    
+   menu=document.getElementById("services_menu");
+   isDisplay= window.getComputedStyle(menu).display;
+   if(isDisplay=="block"){
+    menu.style.display="none";
+   }
+   else if(isDisplay=="none"){
+    menu.style.display="block";
+   }
+
+   
+});
+
+                </script> -->
+                <ul id="services_menu">
+                    <li><a href="/site/consultations">Консультация специалистов</a></li>
+                    <li><a href="/site/measurements">Замеры облицовки</a></li>
+                    <li><a href="/site/delievers">Доставка материала</a></li>
+                    <li><a href="/site/montage">Монтаж</a></li>
+                </ul>
+            </div>
+                <a href="/site/partners">Партнеры</a>
                 <a href="/site/about">О компании</a>
             </nav>
         </div>
 
-        <div class="bg">
-            <div class="info-container anim">
-                <div class="info-text">
-                    <h1>Большой выбор</br> плит</h1>
-                    <p>ГРАНИТНЫЕ И КЕРАМИЧЕСКИЕ ПЛИТЫ ОТ</br> 5 тыс.руб.</p>
-
-                </div>
-
-                <ul class="list">
-                    <li>Гранитные плиты</li>
-                    <li>Плиты мощения</li>
-                    <li>Облицовочные плиты</li>
-                    <li>Широкоформатные плиты</li>
-                    <li>Бордюры и ступени</li>
-                    <li>и другое</li>
-                </ul>
-
-
-            </div>
-            <div class="gift-block anim">
-                <p class="topic"><mark class="bold">Подарок</mark> на вашу</br> первую покупку</p>
-                <div class="gift-container">
-                    <img src="../../web/img/Gift.png" alt="подарок">
-                    <p>От 20 тыс</br><mark class="lower-text">рублей!</mark> </p>
-                </div>
-
-                <p class="description">При заказе строительных работ в</br> компании ООО ”Marleno Group”</p>
-                <p class="description">Предоставляем дополнительный</br> набор плит под ваши цели</br> <mark
-                        class="bold">БЕСПЛАТНО</mark></p>
-                <p class="phone">+7 (000) 000-00-00</p>
-                <button class="button-black">Оставить заявку</button>
-
-            </div>
-        </div>
+       
     </header>
 
     <?= $content ?>
+
+    
 
     <footer>
         <div class="container">
@@ -95,7 +97,7 @@ AppAsset::register($this);
                             <li><a href="/site/construction">Производство</a></li>
                             <li><a href="/site/catalog">Каталог</a></li>
                             <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Партнеры</a></li>
+                            <li><a href="/site/partners">Партнеры</a></li>
                             <li><a href="/site/about">О компании</a></li>
                         </ul>
                         <div class="footer-social">

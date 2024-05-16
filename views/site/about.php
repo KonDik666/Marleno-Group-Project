@@ -7,6 +7,12 @@ use yii\helpers\Html;
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<section>
+    <div class="bg_empty">
+            
+           
+        </div>
+</section>   
 
  <section class="about">
         <h1 class="anim">Контактные данные</h1>
@@ -124,5 +130,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <section class="anim">
+    <div class="platform_map">
+        <p>Екатеринбург, Улица Смазчиков, дом 10 к 4, офис 25</p>
+        </div>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3539023eca36e9fb8e1f56ecad884b0f6ecf9334ff6f335ef81bdb003101a324&amp;source=constructor" width="100%" height="450" frameborder="0"></iframe>
     </section>
